@@ -81,13 +81,13 @@ export default function Header(props) {
               >
                 Login
               </Button>
-              <Button
+              {/* <Button
                 className={classes.buttons}
                 variant="outlined"
                 onClick={RegisterClick}
               >
                 Sign up
-              </Button>
+              </Button> */}
             </div>
           )}
         </Toolbar>
