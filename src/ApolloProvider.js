@@ -10,7 +10,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import { DarkThemeProvider } from "./context/darkTheme";
 
 const httpLink = createHttpLink({
-  uri: "http://localhost:5000",
+  uri: "https://tranquil-island-57686.herokuapp.com/",
 });
 
 const authLink = setContext(() => {
