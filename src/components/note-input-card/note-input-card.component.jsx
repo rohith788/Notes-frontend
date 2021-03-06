@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   paper_size: {
-    minWidth: 550,
+    minWidth: 350,
     marginTop: theme.spacing(1),
   },
   "& .MuiTextField-root": {
