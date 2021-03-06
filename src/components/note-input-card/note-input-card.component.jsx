@@ -125,7 +125,6 @@ export default function NoteInputCard() {
                 multiline
                 rows={4}
                 variant="outlined"
-                rows={4}
                 label="input note here"
                 name="body"
                 value={values.body}

@@ -33,16 +33,13 @@ const useStyles = makeStyles((theme) => ({
   root: {
     minWidth: 250,
     maxWidth: 400,
-    // padding: theme.spacing(1),
     margin: theme.spacing(1),
   },
   title: {
     fontSize: 14,
   },
   content: { padding: 15 },
-  // pos: {
-  //   marginBottom: 12,
-  // },
+
   closeButton: {
     position: "absolute",
   },
@@ -58,7 +55,7 @@ export default function NoteCard({ title, noteText, noteId }) {
     body: noteText,
   });
 
-  const stopPropagation = (e) => {
+  const stopClick = (e) => {
     e.stopPropagation();
     deleteNote();
   };
@@ -128,7 +125,7 @@ export default function NoteCard({ title, noteText, noteId }) {
             <b>{title}</b>
           </Typography>
           <Typography>{noteText}</Typography>
-          <DeleteIcon className={classes.icon} onClick={stopPropagation} />
+          <DeleteIcon className={classes.icon} onClick={stopClick} />
         </CardContent>
       </Card>
 
@@ -167,7 +164,7 @@ export default function NoteCard({ title, noteText, noteId }) {
           />
         </DialogContent>
         <DialogActions>
-          <DeleteIcon onClick={stopPropagation} />
+          <DeleteIcon onClick={stopClick} />
           <Button autoFocus onClick={onSubmit} color="primary">
             update
           </Button>
