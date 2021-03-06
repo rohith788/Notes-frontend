@@ -41,9 +41,9 @@ export default function Header(props) {
   const LoginClick = () => {
     history.push("/login");
   };
-  const RegisterClick = () => {
-    history.push("/register");
-  };
+  // const RegisterClick = () => {
+  //   history.push("/register");
+  // };
 
   return (
     <div className={classes.grow}>
