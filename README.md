@@ -1,4 +1,5 @@
 # Keeps-Clone App
+
 A website to take and save notes, inspired from Google Keeps. The front end is implemented with React, Material Design UI and the backend is made with Node.js, GraphQL and Apollo server. It has storage, user registration and authentication implemented with MongoDB Atlas. 
 
 ![Image description](https://github.com/rohith788/Notes-frontend/blob/main/Projects_images/main_pg.png)
@@ -14,3 +15,4 @@ rosu-notes.netlify.app/
 * Node.js
 * MongoDB
 * Graphql
+#### (The backend is hosted in Heroku and it goes to sleep very ofter so it takes a minute to boot up after clicking)
